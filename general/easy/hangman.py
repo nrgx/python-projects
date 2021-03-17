@@ -64,8 +64,8 @@ def hangman():
     elif guess in word:
         guessed.extend([guess])
         index = word.find(guess)
-        word = word[:index] + "_" + word[index + 1:]
-        display = display[:index] + guess + display[index + 1:]
+        word = word[:index] + "_" + word[index + 1 :]
+        display = display[:index] + guess + display[index + 1 :]
         print(f"{display}\n")
     elif guess in guessed:
         print("Try another letter")
@@ -74,61 +74,71 @@ def hangman():
         warning = f"Wrong guess. {limit - count} guesses left.\n"
         if count == 1:
             time.sleep(1)
-            print("   _____ \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "__|__\n")
+            print(
+                "   _____ \n"
+                "  |      \n"
+                "  |      \n"
+                "  |      \n"
+                "  |      \n"
+                "  |      \n"
+                "  |      \n"
+                "__|__\n"
+            )
             print(warning)
         elif count == 2:
             time.sleep(1)
-            print("   _____ \n"
-                  "  |     |\n"
-                  "  |     |\n"
-                  "  |      \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "__|__\n")
+            print(
+                "   _____ \n"
+                "  |     |\n"
+                "  |     |\n"
+                "  |      \n"
+                "  |      \n"
+                "  |      \n"
+                "  |      \n"
+                "__|__\n"
+            )
             print(warning)
         elif count == 3:
             time.sleep(1)
-            print("   _____ \n"
-                  "  |     |\n"
-                  "  |     |\n"
-                  "  |     |\n"
-                  "  |      \n"
-                  "  |      \n"
-                  "  |      \n"
-                  "__|__\n")
+            print(
+                "   _____ \n"
+                "  |     |\n"
+                "  |     |\n"
+                "  |     |\n"
+                "  |      \n"
+                "  |      \n"
+                "  |      \n"
+                "__|__\n"
+            )
             print(warning)
         elif count == 4:
             time.sleep(1)
-            print("   _____ \n"
-                  "  |     |\n"
-                  "  |     |\n"
-                  "  |     |\n"
-                  "  |     0\n"
-                  "  |      \n"
-                  "  |      \n"
-                  "__|__\n")
+            print(
+                "   _____ \n"
+                "  |     |\n"
+                "  |     |\n"
+                "  |     |\n"
+                "  |     0\n"
+                "  |      \n"
+                "  |      \n"
+                "__|__\n"
+            )
             print(warning)
         elif count == 5:
             time.sleep(1)
-            print("   _____   \n"
-                  "  |     |  \n"
-                  "  |     |  \n"
-                  "  |     |  \n"
-                  "  |     0  \n"
-                  "  |    /|\ \n"
-                  "  |    / \ \n"
-                  "__|__\n")
+            print(
+                "   _____   \n"
+                "  |     |  \n"
+                "  |     |  \n"
+                "  |     |  \n"
+                "  |     0  \n"
+                "  |    /|\ \n"
+                "  |    / \ \n"
+                "__|__\n"
+            )
             print(f"You are hanged. The word was {guessed}, {word}")
             loop()
-    if word == '_' * length:
+    if word == "_" * length:
         print("Congratulations! You guesses the word")
         loop()
     elif count == limit:
@@ -136,7 +146,7 @@ def hangman():
     hangman()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     loop()
     print(f"You need to guess the word {display}")
     hangman()

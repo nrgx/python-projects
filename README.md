@@ -19,7 +19,18 @@ All the projects are from Internet surfing. There is a small list of sources.
 - **In what areas are these projects?**\
 Whatever area, be it AI/ML models, gamedev related, web-based, cli tools, mobile apps etc.
 - **Structure of projects**
-Structure of projects is made by grading by their complexity (easy, middle, hard) + area of usage 
-  (python script - py, web, ml, mobile), like tic-tac-toe and dice simulator are in easypy, 
-  e-commerce shop with recommendation system in middleweb and computer vision or image recognition projects in hardml,
-  etc. Overtime the idea of structuring will be clear.
+Structure of projects is made by area of use with nested project complexity e.g.:
+  - ai
+    - easy 
+    - medium
+    - advanced
+  - general
+    - easy 
+    - medium
+    - advanced
+  - web
+    - easy 
+    - medium
+    - advanced
+  
+    etc.
