@@ -1,5 +1,8 @@
 """
 Rock | Paper | Scissors
+Easy Implementation of RPS game
+Make GUI app more beautiful
+Move all to functions
 """
 from tkinter import *
 import random
