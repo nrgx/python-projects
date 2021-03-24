@@ -96,9 +96,7 @@ def generate_matrix(table: list[list]):
                         if len(group) == ship_length:
                             replacement = ship
                         else:
-                            random_index = randint(
-                                0, len(group) - ship_length - 1
-                            )
+                            random_index = randint(0, len(group) - ship_length - 1)
                             group[random_index : random_index + ship_length] = ship
                             replacement = group
                         groups[groups.index(group)] = replacement
@@ -136,9 +134,7 @@ def generate_matrix(table: list[list]):
                         if len(group) == ship_length:
                             replacement = ship
                         else:
-                            random_index = randint(
-                                0, len(group) - ship_length - 1
-                            )
+                            random_index = randint(0, len(group) - ship_length - 1)
                             group[random_index : random_index + ship_length] = ship
                             replacement = group
                         groups[groups.index(group)] = replacement
@@ -168,7 +164,7 @@ def test():
 
 
 def display(matrix: list[list]):
-    """ Display matrix
+    """Display matrix
     Shows pretty styled matrix
     :param matrix:
     :return:
@@ -238,5 +234,5 @@ def start():
             user_turn = True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     start()
